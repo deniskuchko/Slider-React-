@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Slider-React-/static/css/main.d3d0bab8.chunk.css",
+    "main.js": "/Slider-React-/static/js/main.b9e810e4.chunk.js",
+    "main.js.map": "/Slider-React-/static/js/main.b9e810e4.chunk.js.map",
+    "runtime-main.js": "/Slider-React-/static/js/runtime-main.7a621e84.js",
+    "runtime-main.js.map": "/Slider-React-/static/js/runtime-main.7a621e84.js.map",
+    "static/js/2.7d13dcac.chunk.js": "/Slider-React-/static/js/2.7d13dcac.chunk.js",
+    "static/js/2.7d13dcac.chunk.js.map": "/Slider-React-/static/js/2.7d13dcac.chunk.js.map",
+    "index.html": "/Slider-React-/index.html",
+    "precache-manifest.8f5ea10216efa10be9378ec957a184d6.js": "/Slider-React-/precache-manifest.8f5ea10216efa10be9378ec957a184d6.js",
+    "service-worker.js": "/Slider-React-/service-worker.js",
+    "static/css/main.d3d0bab8.chunk.css.map": "/Slider-React-/static/css/main.d3d0bab8.chunk.css.map",
+    "static/js/2.7d13dcac.chunk.js.LICENSE.txt": "/Slider-React-/static/js/2.7d13dcac.chunk.js.LICENSE.txt",
+    "static/media/back.svg": "/Slider-React-/static/media/back.290174b6.svg",
+    "static/media/next.svg": "/Slider-React-/static/media/next.ff2b9671.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a621e84.js",
+    "static/js/2.7d13dcac.chunk.js",
+    "static/css/main.d3d0bab8.chunk.css",
+    "static/js/main.b9e810e4.chunk.js"
+  ]
+}
