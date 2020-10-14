@@ -4,11 +4,15 @@ import Points from '../Points/Points'
 import SlideContent from './SlideContent'
 import s from './Slider.module.css'
 
-let getWidth =()=> window.innerWidth
 
 
 export default function Slider(props) {
-    let slide = props.props
+    
+    let getWidth =()=> {
+        return props.itemInSlide? window.innerWidth / props.itemInSlide: window.innerWidth
+    }
+
+    let slide = props.img
 
     const [state,setstate] = useState({
         indexOfSlider:0,
@@ -20,7 +24,7 @@ export default function Slider(props) {
         indexOfSlider,
         transition,
         translate
-    } = state
+    } = state 
 
     const playRef = useRef()
     useEffect(()=>{playRef.current = nextSlide})
@@ -37,22 +41,26 @@ export default function Slider(props) {
     },[props.play])
 
     const nextSlide=()=>{
-        if(indexOfSlider === slide.length - 1){
-            return setstate({...state,
+        if(indexOfSlider === slide.length -props.itemInSlide){
+            return setstate({
+                ...state,
                 translate:0,
                 indexOfSlider:0,
             })
         }
-        setstate({...state,
+        
+        setstate({
+            ...state,
             indexOfSlider:indexOfSlider + 1,
             translate:(indexOfSlider + 1) * getWidth()
         })
     }
     const prevSlide=()=>{ 
         if(indexOfSlider === 0){
-            return setstate({...state,
-                translate:(slide.length - 1) * getWidth(),
-                indexOfSlider:(slide.length - 1),
+            return setstate({
+                ...state,
+                translate:(slide.length - props.itemInSlide) * getWidth(),
+                indexOfSlider:(slide.length - props.itemInSlide),
             })
         }
         setstate({
@@ -74,7 +82,9 @@ export default function Slider(props) {
                 transition={transition}
                 translate={translate} 
                 width={getWidth() * slide.length}
-                slide ={slide}>
+                slide ={slide}
+                between={props.between}
+                >
             </SlideContent>
             {!props.play && 
                 <div>
@@ -83,7 +93,7 @@ export default function Slider(props) {
                 </div>
             }
             
-            <Points slide={slide} indexOfSlider={indexOfSlider} clickSpan={clickSpan}/>
+            <Points slide={slide} indexOfSlider={indexOfSlider} clickSpan={clickSpan} itemInSlide={props.itemInSlide}/>
         </div>
     )
 }

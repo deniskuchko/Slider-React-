@@ -12,7 +12,7 @@ const img=[
 ]
 ReactDOM.render(
   <React.StrictMode>
-    <App props={img} play={1}/>
+    <App img = {img} play={null} itemInSlide ={1} between={5}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

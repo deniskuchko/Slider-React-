@@ -2,22 +2,27 @@
   display: flex;
   position: absolute;
   top: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   justify-content: center;
   background: white;
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
   transition: transform ease 0.1s;
+  opacity: 0.7;
 }
 .arrow:hover {
   transform: scale(1.1);
+  opacity: 1;
+}
+.arrow:hover:last-child {
+  transform: translateX(2px);
+}
+.arrow:hover:first-child {
+  transform: translateX(-2px);
 }
 .arrow img {
-  width: 40px;
+  width: 30px;
   height: 40px;
-}
-img:focus {
-  outline: 0;
 }

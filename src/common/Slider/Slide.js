@@ -1,16 +1,13 @@
 import React from 'react'
+import s from './Slider.module.css'
 
 export default function Slide(props) {
     return (
-        <div style={{
-            backgroundImage:`url(${props.contents})`,
-            width: `100%`,
-            height: `100%`,
-            backgroundRepeat: 'round',
-            backgroundSize: 'cover',
-        } }>
-            
-            
+        <div className={s.slide} 
+            style={{
+                backgroundImage:`url(${props.contents})`,
+                margin:` 0 ${props.between}px`,
+            }}> 
         </div>
     )
 }
