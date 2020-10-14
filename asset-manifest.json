@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Slider-React-/static/css/main.ca392507.chunk.css",
-    "main.js": "/Slider-React-/static/js/main.d05d360c.chunk.js",
-    "main.js.map": "/Slider-React-/static/js/main.d05d360c.chunk.js.map",
+    "main.js": "/Slider-React-/static/js/main.1e3cb7f0.chunk.js",
+    "main.js.map": "/Slider-React-/static/js/main.1e3cb7f0.chunk.js.map",
     "runtime-main.js": "/Slider-React-/static/js/runtime-main.7a621e84.js",
     "runtime-main.js.map": "/Slider-React-/static/js/runtime-main.7a621e84.js.map",
     "static/js/2.4884bdb1.chunk.js": "/Slider-React-/static/js/2.4884bdb1.chunk.js",
     "static/js/2.4884bdb1.chunk.js.map": "/Slider-React-/static/js/2.4884bdb1.chunk.js.map",
     "index.html": "/Slider-React-/index.html",
-    "precache-manifest.e9faf4c095adb6a2b20690affa8a4d35.js": "/Slider-React-/precache-manifest.e9faf4c095adb6a2b20690affa8a4d35.js",
+    "precache-manifest.32b57c1af18b294f0e6393aa549d6a0a.js": "/Slider-React-/precache-manifest.32b57c1af18b294f0e6393aa549d6a0a.js",
     "service-worker.js": "/Slider-React-/service-worker.js",
     "static/css/main.ca392507.chunk.css.map": "/Slider-React-/static/css/main.ca392507.chunk.css.map",
     "static/js/2.4884bdb1.chunk.js.LICENSE.txt": "/Slider-React-/static/js/2.4884bdb1.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.7a621e84.js",
     "static/js/2.4884bdb1.chunk.js",
     "static/css/main.ca392507.chunk.css",
-    "static/js/main.d05d360c.chunk.js"
+    "static/js/main.1e3cb7f0.chunk.js"
   ]
 }
